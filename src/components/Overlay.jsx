@@ -10,6 +10,7 @@ const Section = (props) => {
         className={`h-screen flex flex-col justify-center p-10 ${
             copyProps.right ? 'items-end' : 'items-start'
         }`}
+        style={{opacity: copyProps.opacity}}
         >
             <div className="w-1/2 flex items-center justify-center">
                 <div className="max-w-sm w-full">
@@ -41,7 +42,7 @@ export const Overlay = () => {
             <div className="w-screen">
             
             <Section opacity={opacityFirstSection}>
-                <h1 className="font-serif text-2xl">Hello, I am Nguyen Dinh Phuoc</h1>
+                <h1 className="font-serif text-2xl">Hello,<br/> I&#39;m Nguyen Dinh Phuoc</h1>
                 <p className="text-gray-500">Welcome to my beautiful portfolio</p>
                 <p className="mt-3">I know:</p>
                 <ul className="leading-9">
@@ -61,7 +62,7 @@ export const Overlay = () => {
                 <ul className="leading-9">
                     <li>ReactJs</li>
                     <li>React Native</li>
-                    <li>NextJs</li>
+                    <li>HTML and CSS</li>
                     <li>Tailwind</li>
                 </ul>
                 <p className="mt-3">
@@ -80,6 +81,12 @@ export const Overlay = () => {
                 <h1 className="font-semibold font-serif text-2xl">
                     🤙 Call me maybe?
                 </h1>
+                <p className="mt-6 p-3 bg-slate-200 rounded-lg">
+                    📞 Phone: <a href="tel:(+84) 796-513-375">(+84) 796-513-375</a>
+                </p>
+                <p className="mt-6 p-3 bg-slate-200 rounded-lg">
+                    🐱‍🚀 Github: <a href="https://github.com/NdPhuoc3105"> https://github.com/NdPhuoc3105</a>
+                </p>
             </Section>
             </div>
         </Scroll>
