@@ -115,7 +115,6 @@ export function Office(props) {
   }, [])
 
 
-  console.log(nodes['01_office']);
 
   return (
     <>
